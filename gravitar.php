@@ -7,7 +7,7 @@
 *
 */
 
-class Gravitar {
+class Gravatar {
 
 	function __construct()
 	{

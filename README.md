@@ -1,4 +1,4 @@
-codeigniter-gravitar
+codeigniter-gravatar
 ====================
 
 Gravitar library for CodeIgniter

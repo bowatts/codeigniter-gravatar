@@ -14,7 +14,7 @@ class Gravatar {
 		
 	}
 
-	public function get_gravitar_url( $email = '', $size = '100', $default = 'mm' )
+	public function get_gravatar_url( $email = '', $size = '100', $default = 'mm' )
 	{
 		$email = strtolower($email);
 		$email = trim($email);
@@ -22,12 +22,12 @@ class Gravatar {
 		$base_url = 'https://www.gravatar.com/avatar/';
 		$hash = md5( $email );
 
-		$gravitar = $base_url . $hash . '?s='.$size.'d='.$default;
+		$gravatar = $base_url . $hash . '?s='.$size.'d='.$default;
 
-		return $gravitar;
+		return $gravatar;
 	}
 
-	public function get_gravitar_img( $email = '', $size = '100', $default = 'mm', $class = '' )
+	public function get_gravatar_img( $email = '', $size = '100', $default = 'mm', $class = '' )
 	{
 		$email = strtolower($email);
 		$email = trim($email);
@@ -35,12 +35,12 @@ class Gravatar {
 		$base_url = 'https://www.gravatar.com/avatar/';
 		$hash = md5( $email );
 
-		$gravitar = '<img src="'.$base_url . $hash . '?s='.$size.'d='.$default.'" class="'.$class.'">';
+		$gravatar = '<img src="'.$base_url . $hash . '?s='.$size.'d='.$default.'" class="'.$class.'">';
 
-		return $gravitar;
+		return $gravatar;
 	}
 	
 }
 
-/* End of file gravitar.php */
-/* Location: ./application/libraries/gravitar.php */
+/* End of file gravatar.php */
+/* Location: ./application/libraries/gravatar.php */

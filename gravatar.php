@@ -14,7 +14,7 @@ class Gravatar {
 		
 	}
 
-	public function get_gravatar_url( $email = '', $size = '100', $default = 'mm' )
+	public function get_url( $email = '', $size = '100', $default = 'mm' )
 	{
 		$email = strtolower($email);
 		$email = trim($email);
@@ -27,7 +27,7 @@ class Gravatar {
 		return $gravatar;
 	}
 
-	public function get_gravatar_img( $email = '', $size = '100', $default = 'mm', $class = '' )
+	public function get_img( $email = '', $size = '100', $default = 'mm', $class = '' )
 	{
 		$email = strtolower($email);
 		$email = trim($email);

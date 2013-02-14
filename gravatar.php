@@ -35,7 +35,7 @@ class Gravatar {
 		$base_url = 'https://www.gravatar.com/avatar/';
 		$hash = md5( $email );
 
-		$gravatar = '<img src="'.$base_url . $hash . '?s='.$size.'d='.$default.'" class="'.$class.'">';
+		$gravatar = '<img src="'.$base_url . $hash . '?s='.$size.'&amp;d='.$default.'" class="'.$class.'">';
 
 		return $gravatar;
 	}
